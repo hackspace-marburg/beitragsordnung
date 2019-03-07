@@ -1,74 +1,87 @@
-\documentclass[parskip=half]{scrreprt} 
+\documentclass[10pt,conference,a4paper,onecolumn,nofonttune]{IEEEtran}
 
-\usepackage[utf8]{inputenc} 
-\usepackage[T1]{fontenc} 
-\usepackage[ngerman]{babel} 
-\usepackage{lmodern} 
-\usepackage[juratotoc]{scrjura} 
-\usepackage[margin=2cm, foot=1cm]{geometry}
-\usepackage{eurosym}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+\usepackage{hyperref}
 \usepackage[pdftex]{graphicx}
 \usepackage{xcolor}
+\usepackage{eurosym}
+\usepackage{etoolbox}
 
-\makeatletter 
-\renewcommand*{\parformat}{% 
-  \global\hangindent 2em 
-  \makebox[2em][l]{(\thepar)\hfill}\hspace{-0,3cm} 
-} 
-\makeatother 
+\renewcommand{\thesection}{\S \arabic{section}}
 
-\newcommand{\TODO}[1]{\textcolor{red}{#1}}
+\patchcmd{\section}{\centering}{}{}{}
 
 \begin{document} 
   
-\addchap{Beitragsordnung des \TODO{Hackspace Marburg e.V.} }
+\title{Beitragsordnung Hackspace Marburg e.V.}
 
-\begin{contract} 
-
-\Clause{} 
-Alle Vereinsmitglieder zahlen einen Mitgliedsbeitrag.
-
-Der Mitgliedsbeitrag wird je nach Höhe montatlich oder halbjährlich erhoben.
-
-Ehrenmitglieder sind von der Beitragszahlung befreit.
+\maketitle
 
 
-\Clause{}
-Die Beitr\"age werden jeweils zum ersten Werktag des Zahlungszeitraums f\"allig bzw. eingezogen.
+\section{}
+\begin{enumerate}
+  \item Alle Vereinsmitglieder zahlen einen Mitgliedsbeitrag.
 
-Dem Verein wird hierf\"ur ein SEPA-Lastschriftmandat erteilt.
-Dieses ist eine Anlage zum Aufnahmeantrag.
+  \item Der Mitgliedsbeitrag wird je nach Höhe montatlich oder halbjährlich
+    erhoben.
+
+  \item Ehrenmitglieder sind von der Beitragszahlung befreit.
+\end{enumerate}
+
+
+\section{}
+\begin{enumerate}
+  \item Die Beiträge werden jeweils zum ersten Werktag des Zahlungszeitraums
+    fällig bzw. eingezogen.
+
+  \item Dem Verein wird hierfür ein SEPA-Lastschriftmandat erteilt.Dieses ist
+    eine Anlage zum Aufnahmeantrag.
+\end{enumerate}
   
-\Clause{} 
-Der Beitrag staffelt sich wie folgt:
-\begin{itemize}
-\item Natürliche Mitglieder: \TODO{2,50\euro}\ im Monat.
-\item Juristische Mitglieder: \TODO{20\euro}\ im Monat.
-\item Natürliche Fördermitglieder: \TODO{5\euro}\ im Monat.
-\item Juristische Fördermitglieder: \TODO{40\euro}\ im Monat.
-\end{itemize}
 
-Die Beitragszahlungen sind ausdr\"ucklich Mindestbeitr\"age.
+\section{} 
+\begin{enumerate}
+  \item Der Beitrag staffelt sich wie folgt:
+    \begin{itemize}
+      \item Natürliche Mitglieder: 2,50\euro\ im Monat.
+      \item Juristische Mitglieder: 20\euro\ im Monat.
+      \item Natürliche Fördermitglieder: 5\euro\ im Monat.
+      \item Juristische Fördermitglieder: 40\euro\ im Monat.
+    \end{itemize}
 
-Der Mitgliedsbeitrag kann schriftlich für das nächste Abrechnungsintervall geändert werden.
+  \item Die Beitragszahlungen sind ausdrücklich Mindestbeiträge.
 
-Ab einem Mitgliedsbeitrag von mehr als 15 \euro\ pro Monat wird dieser monatlich erhoben, ansonsten halbjährlich.
+  \item Der Mitgliedsbeitrag kann schriftlich für das nächste
+    Abrechnungsintervall geändert werden.
 
-
-\Clause{}
-Der Verein erhebt keine Aufnahmegeb\"uhr.
-
-\Clause{}
-Au{\ss}erordentliche Ausgaben k\"onnen durch einen zus\"atzlichen Spendenaufruf gedeckt werden.
-
-\Clause{}
-Diese Beitragsordnung kann gemäß Pargraph 6, Absatz 2 der Satzung nur durch Beschluss der Mitgliederversammlung geändert werden.
+  \item Ab einem Mitgliedsbeitrag von mehr als 15 \euro\ pro Monat wird dieser
+    monatlich erhoben, ansonsten halbjährlich.
+\end{enumerate}
 
 
-\end{contract} 
-  
-  
- \vspace{3cm}
-  
+\section{}
+\begin{enumerate}
+  \item Der Verein erhebt keine Aufnahmegebühr.
+\end{enumerate}
+
+
+\section{}
+\begin{enumerate}
+  \item Außerordentliche Ausgaben können durch einen zusätzlichen Spendenaufruf
+    gedeckt werden.
+\end{enumerate}
+
+
+\section{}
+\begin{enumerate}
+  \item Diese Beitragsordnung kann gemäß \textit{\S 6, Absatz 2} der
+    \href{https://hsmr.cc/uploads/Verein/Satzung.pdf}{Satzung}
+    nur durch Beschluss der Mitgliederversammlung geändert werden.
+\end{enumerate}
+
+
+\section*{}
 Beschlossen durch die Mitgliederversammlung am 18.11.2018.
+
 \end{document}
