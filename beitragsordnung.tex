@@ -1,0 +1,74 @@
+\documentclass[parskip=half]{scrreprt} 
+
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage[ngerman]{babel} 
+\usepackage{lmodern} 
+\usepackage[juratotoc]{scrjura} 
+\usepackage[margin=2cm, foot=1cm]{geometry}
+\usepackage{eurosym}
+\usepackage[pdftex]{graphicx}
+\usepackage{xcolor}
+
+\makeatletter 
+\renewcommand*{\parformat}{% 
+  \global\hangindent 2em 
+  \makebox[2em][l]{(\thepar)\hfill}\hspace{-0,3cm} 
+} 
+\makeatother 
+
+\newcommand{\TODO}[1]{\textcolor{red}{#1}}
+
+\begin{document} 
+  
+\addchap{Beitragsordnung des \TODO{Hackspace Marburg e.V.} }
+
+\begin{contract} 
+
+\Clause{} 
+Alle Vereinsmitglieder zahlen einen Mitgliedsbeitrag.
+
+Der Mitgliedsbeitrag wird je nach Höhe montatlich oder halbjährlich erhoben.
+
+Ehrenmitglieder sind von der Beitragszahlung befreit.
+
+
+\Clause{}
+Die Beitr\"age werden jeweils zum ersten Werktag des Zahlungszeitraums f\"allig bzw. eingezogen.
+
+Dem Verein wird hierf\"ur ein SEPA-Lastschriftmandat erteilt.
+Dieses ist eine Anlage zum Aufnahmeantrag.
+  
+\Clause{} 
+Der Beitrag staffelt sich wie folgt:
+\begin{itemize}
+\item Natürliche Mitglieder: \TODO{2,50\euro}\ im Monat.
+\item Juristische Mitglieder: \TODO{20\euro}\ im Monat.
+\item Natürliche Fördermitglieder: \TODO{5\euro}\ im Monat.
+\item Juristische Fördermitglieder: \TODO{40\euro}\ im Monat.
+\end{itemize}
+
+Die Beitragszahlungen sind ausdr\"ucklich Mindestbeitr\"age.
+
+Der Mitgliedsbeitrag kann schriftlich für das nächste Abrechnungsintervall geändert werden.
+
+Ab einem Mitgliedsbeitrag von mehr als 15 \euro\ pro Monat wird dieser monatlich erhoben, ansonsten halbjährlich.
+
+
+\Clause{}
+Der Verein erhebt keine Aufnahmegeb\"uhr.
+
+\Clause{}
+Au{\ss}erordentliche Ausgaben k\"onnen durch einen zus\"atzlichen Spendenaufruf gedeckt werden.
+
+\Clause{}
+Diese Beitragsordnung kann gemäß Pargraph 6, Absatz 2 der Satzung nur durch Beschluss der Mitgliederversammlung geändert werden.
+
+
+\end{contract} 
+  
+  
+ \vspace{3cm}
+  
+Beschlossen durch die Mitgliederversammlung am 18.11.2018.
+\end{document}
